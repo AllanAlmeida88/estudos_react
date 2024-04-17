@@ -1,9 +1,19 @@
-export default function Header(props: any) {
+interface CabecalhoPropos {
+    className: string,
+    titulo: string,
+    subtitulo: string
+}
+
+
+export default function Header(props: CabecalhoPropos) {
     return (
         <div className={
             `
-                bg-purple-600 h-44 rounded-lg
-                flex flex-col justify-center items-center w-100
+                ${props.className ?? `
+                    bg-purple-600 h-24 rounded-lg
+                    flex flex-col justify-center items-center
+                ` }
+                
             `}>
 
                 <span className="text-4xl font-black">{props.titulo}</span>

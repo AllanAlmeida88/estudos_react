@@ -1,10 +1,15 @@
-export default function Content(props: any) {
+interface ContentProps {
+    children: any,
+    className?: string
+}
+
+export default function Content(props: ContentProps) {
     return (
         <div className={`
-            flex justify-center items-center flex-1
-            bg-green-500 rounded-lg
+            flex flex-1
+            justify-center items-center
+            bg-green-500 rounded-lg 
         `}>
-            
             {props.children}
         </div>
     )
