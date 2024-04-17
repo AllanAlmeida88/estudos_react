@@ -1,12 +1,10 @@
-
+import Pagina from "@/app/components/Pagina";
 
 
 export default function Page() {
     return (
-        <div className={`
-            flex flex-col p-4 gap-4 h-screen
-        `}>
-           
-        </div>
+        <Pagina titulo="Pagina de fundamentos" subtitulo="Estudos">
+            <button className="bg-blue-500 rounded-md p-4">Botão</button>
+        </Pagina>
     )
 }

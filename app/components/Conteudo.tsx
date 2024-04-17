@@ -1,9 +1,10 @@
 export default function Content(props: any) {
     return (
         <div className={`
-            flex justify-center items-center
-            bg-green-500 h-screen rounded-lg
+            flex justify-center items-center flex-1
+            bg-green-500 rounded-lg
         `}>
+            
             {props.children}
         </div>
     )

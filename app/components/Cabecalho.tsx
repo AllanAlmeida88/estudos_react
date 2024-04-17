@@ -3,13 +3,11 @@ export default function Header(props: any) {
         <div className={
             `
                 bg-purple-600 h-44 rounded-lg
-                flex flex-col justify-center items-center
+                flex flex-col justify-center items-center w-100
             `}>
 
                 <span className="text-4xl font-black">{props.titulo}</span>
                 <span>{props.subtitulo}</span>
-                
-
         </div>
     )
 }
