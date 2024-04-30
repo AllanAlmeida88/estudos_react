@@ -6,8 +6,9 @@ interface FooterProps {
 export default function Footer(props: any) {
     return (
         <div className={`
-            flex p-4 justify-between items-center
-            bg-cyan-600 h-16 rounded-lg text-2xl
+            flex justify-between items-center px-10
+            h-16 text-base text-zinc-500
+            border-t border-zinc-800 bg-zinc-900
         `}>
             <span>{props.textoL}</span>
             <span>{props.textoR}</span>

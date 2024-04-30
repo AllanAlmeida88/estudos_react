@@ -1,3 +1,5 @@
+import Pagina from "@/app/components/Pagina"
+
 export default function page() {
 
     function renderizarTitulo() {
@@ -20,10 +22,14 @@ export default function page() {
     }
 
     return (
-        <div>
-            {renderizarTitulo()}
-            <hr />
-            {renderizarConteudo()}
-        </div>
+
+        <Pagina titulo="Pagina de fundamentos" subtitulo="Estudos">
+            <div className="flex flex-col gap-4">
+                {renderizarTitulo()}
+                <hr />
+                {renderizarConteudo()}
+            </div>
+        </Pagina>
+       
     )
 }

@@ -3,17 +3,22 @@ import Link from "next/link";
 interface MenuItemProps {
     url: string,
     label: string,
-    className?: string
+    className?: string,
+    icone: any
 }
 
 export default function MenuItem(props: MenuItemProps) {
     return (
         <Link href={props.url} className={`
-            bg-zinc-900 w-full rounded-md
+            w-full rounded-md
             px-4 py-2
-            text-xl
+            text-base
+            flex items-center gap-2
+            hover:bg-zinc-900
         `}>
-            {props.label}
+            <span>{props.icone}</span>
+            <span>{props.label}</span>
+            
         </Link>
     )
 }

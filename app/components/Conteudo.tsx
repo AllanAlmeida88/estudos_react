@@ -5,11 +5,7 @@ interface ContentProps {
 
 export default function Content(props: ContentProps) {
     return (
-        <div className={`
-            flex flex-1
-            justify-center items-center
-            bg-green-500 rounded-lg 
-        `}>
+        <div className={`flex items-start flex-1 p-4 bg-zinc-900 ${props.className}`}>
             {props.children}
         </div>
     )
