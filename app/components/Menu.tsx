@@ -15,6 +15,7 @@ export default function Menu(props: MenuProps) {
 
             <span  className="text-sm text-zinc-500 self-start pl-3 pt-4">Comunicação</span>
             <MenuItem icone={<IconCode />} url="/comunicacao/direta" label="Comunicação direta"/>
+            <MenuItem icone={<IconCode />} url="/comunicacao/indireta" label="Comunicação indireta"/>
 
             <span  className="text-sm text-zinc-500 self-start pl-3 pt-4">Desafios</span>
             <MenuItem icone={<IconCode />} url="/desafios/sem_passo" label="Desafio contador sem passo"/>
